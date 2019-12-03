@@ -85,7 +85,7 @@ def logout():
 def account():
     if "user" in session.keys():
         if session["user"]["username"] != None:
-            return rend("account.html", user = session["user"],)
+            return rend("account.html", user = session["user"])
     return index()
 
 @app.route("/account")
